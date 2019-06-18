@@ -1,10 +1,11 @@
 import React, { memo } from "react";
 import ItemCard from "../../components/ItemCard";
 import { useHttp } from "../../hooks/http";
+// changed
 
 const DashboardPage = () => {
   const [isLoading, items, fetchError] = useHttp(
-    "http://192.168.10.68/api/items",
+    "http://localhost/api/items",
     []
   );
   const dashItem = () => {

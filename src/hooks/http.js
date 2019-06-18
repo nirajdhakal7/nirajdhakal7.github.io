@@ -16,11 +16,13 @@ export const useHttp = (url, dependencies) => {
       .then(res => {
         if (res.status === 200) {
           setFetchedData(res);
+          console.log(res);
           setFetchError(false);
           setIsLoading(false);
         }
       })
       .catch(err => {
+        console.log(err);
         setFetchError(true);
         setIsLoading(false);
       });

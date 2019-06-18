@@ -4,7 +4,7 @@ import { useHttp } from "../../hooks/http";
 
 const DashboardPage = () => {
   const [isLoading, items, fetchError] = useHttp(
-    "http://laract.test/api/items",
+    "http://192.168.10.68/api/items",
     []
   );
   const dashItem = () => {
